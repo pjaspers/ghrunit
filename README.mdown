@@ -1,0 +1,54 @@
+# ghrunit
+
+## What and why?
+When using [GHUnit](http://gabriel.github.com/gh-unit/) from the command line to run your tests, it gets pretty verbose. So you're spending time combing through the results. Time you could have been spending on ready [hackernews](http://news.ycombinator.com/); so let's change that.
+
+### What we're changing:
+
+* Colored output
+* Better grouping of tests
+
+So this:
+
+![Before](http://dl.dropbox.com/u/16204/ghrunit/before.png)
+
+Becomes this:
+
+![After](http://dl.dropbox.com/u/16204/ghrunit/after.png)
+
+## How do I install it?
+
+1. Be sure to read [this](http://gabriel.github.com/gh-unit/_command_line.html) for the command line build.
+2. Install the gem (`gem install ghrunit`)
+3. Create a `Rakefile` at the `.xcodeproj` level
+4. Fill the `Rakefile` with:
+
+```ruby
+require 'rake'
+require 'ghrunit'
+
+task :default => [:test]
+
+desc "Cleans the build folder"
+task :clean do
+  `rm -rf build/*`
+end
+
+desc "Tests the app from the command line"
+task :test do
+  ENV['GHUNIT_CLI']="1"
+  GHUnitRunner.new(:target => "tests")
+end
+```
+
+## How do I use it?
+
+Open your Terminal, navigate to the project folder and do `rake test`, this should show your tests, neatly organised and colored.
+
+## Can I buy you a beer?
+
+Yes.
+
+Copyright (c) 2011 pjaspers. See LICENSE.txt for
+further details.
+

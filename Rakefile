@@ -16,13 +16,10 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/pjaspers/ghrunit"
   gem.license = "MIT"
   gem.summary = %Q{Better output for GHUnit command line builds}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "junkiesxl@gmail.com"
+  gem.description = %Q{When using GHUnit from the command line to run your tests, it gets pretty verbose. So you're spending time combing through the results. Time you could have been spending on ready hackernews; so let's change that.}
+  gem.email = "piet@10to1.be"
   gem.authors = ["pjaspers"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_runtime_dependency 'turn'
 end
 Jeweler::RubygemsDotOrgTasks.new
 

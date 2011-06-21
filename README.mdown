@@ -1,7 +1,7 @@
 # ghrunit
 
 ## What and why?
-When using [GHUnit](http://gabriel.github.com/gh-unit/) from the command line to run your tests, it gets pretty verbose. So you're spending time combing through the results. Time you could have been spending on ready [hackernews](http://news.ycombinator.com/); so let's change that.
+When using [GHUnit](http://gabriel.github.com/gh-unit/) from the command line to run your tests, it gets pretty verbose. So you're spending time combing through the results. Time you could have been spending on reading [hackernews](http://news.ycombinator.com/); so let's change that.
 
 ### What we're changing:
 

@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.mdown",
     "Rakefile",
     "VERSION",
+    "ghrunit.gemspec",
     "lib/ghrunit.rb",
     "test/build_output.txt",
     "test/helper.rb",

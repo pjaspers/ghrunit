@@ -1,0 +1,48 @@
+PhaseScriptExecution "Run Script" build/Tin.build/Debug-iphonesimulator/tests.build/Script-055E1A3B13A638DB00C7D258.sh
+    cd /Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin
+    /bin/sh -c /Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Tin.build/Debug-iphonesimulator/tests.build/Script-055E1A3B13A638DB00C7D258.sh
+Running: "/Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Debug-iphonesimulator/tests.app/tests" -RegisterForSystemEvents
+Test Suite 'Tests' started.
+
+Starting TestOne/firstTest
+Crap between the lines, here, should not affect the parser.
+ OK (0.000s)
+
+Starting TestOne/lastTest
+Not even if they're multiline
+crap
+a
+hola
+ OK (0.000s)
+
+Starting TestTwo/testTwoFail
+2011-06-20 22:35:16.179 tests[38613:903]
+	Name: GHTestFailureException
+	File: ~/development/objc/TouchPoint/TouchPoint/vendor/Tin/tests/TinUtilityTest.m
+	Line: 57
+	Reason: Type mismatch --
+
+#0  0x113a58c __exceptionPreprocess()  (/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation)
+#1  0x128e313 objc_exception_throw()  (/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/lib/libobjc.A.dylib)
+#2  0x113a4e1 +[NSException raise]  (/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation)
+#3  0x04456b +[TinUtilityTest testTimeOutInSeconds]  (/Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Debug-iphonesimulator/tests.app/tests)
+#4  0x057806 +[GHTesting runTestWithTarget:selector:exception:interval:reraiseExceptions:]  (/Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Debug-iphonesimulator/tests.app/tests)
+#5  0x053b2a +[GHTest run:]  (/Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Debug-iphonesimulator/tests.app/tests)
+#6  0x055735 +[GHTestGroup _run:]  (/Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Debug-iphonesimulator/tests.app/tests)
+#7  0x055735 +[GHTestGroup _run:]  (/Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Debug-iphonesimulator/tests.app/tests)
+#8  0x0589a7 +[GHTestRunner runTests]  (/Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Debug-iphonesimulator/tests.app/tests)
+#9  0x058a16 +[GHTestRunner run]  (/Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Debug-iphonesimulator/tests.app/tests)
+#10 0x009457 main()  (/Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Debug-iphonesimulator/tests.app/tests)
+#11 0x006f51 start()  (/Users/junkiesxl/development/objc/TouchPoint/TouchPoint/vendor/Tin/build/Debug-iphonesimulator/tests.app/tests)
+ FAIL (0.000s)
+
+Starting TestTwo/testTwoOK
+ OK (0.000s)
+
+Test Suite 'Tests' finished.
+Executed 2 of 2 tests, with 1 failures in 4.535 seconds (0 disabled).
+
+Failed tests:
+	TinUtilityTest/testTimeOutInSeconds
+
+Command /bin/sh failed with exit code 1
